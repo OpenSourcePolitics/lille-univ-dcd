@@ -1,5 +1,5 @@
 ---
-fr:
+ca:
   activemodel:
     attributes:
       osp_authorization_handler:
@@ -12,10 +12,10 @@ fr:
     admin:
       scopes:
         form:
-          scope_code_for_personal: 'Personnel : %{code}'
-          scope_code_for_student: 'Étudiant : %{code}'
-          scope_code_for_teacher: 'Enseignant / Chercheur : %{code}'
-          scope_code_information: 'Si ce scope a pour vocation d''être une provenance dans le formulaire d''inscription, veuillez noter que le début du code doit correspondre à son statut :'
+          scope_code_for_personal: 'Personal : %{code}'
+          scope_code_for_student: 'Student : %{code}'
+          scope_code_for_teacher: 'Teacher : %{code}'
+          scope_code_information: 'If this scope aims to be a provenance for the registration form, please ensure your Scope code begins according to the statuses :'
     authorization_handlers:
       osp_authorization_handler:
         explanation: Vérifier votre identité en saisissant un numéro unique
@@ -41,18 +41,6 @@ fr:
         subject: Subject
         warn_of_deletion_account_explanation: Warn of deletion account explanation
         warn_of_deletion_account_html: Warn of deletion account html
-    devise:
-      registrations:
-        new:
-          blank: Renseignez votre provenance
-          partner: Partenaire
-          personal: Personnel
-          provenance: Provenance
-          rgpd_agreement: Je consens à ce que mes données personnelles soient traitées à des fins de mise en place d’une démarche participative par l’Université de Lille.
-          rgpd_title: Consentement à l'utilisation de mes données
-          status: Statut
-          student: Étudiant
-          teacher: Enseignant / Chercheur
     verifications:
       authorizations:
         first_login:
@@ -61,28 +49,17 @@ fr:
             osp_authorization_workflow: Vérifier avec le formulaire de vérification de l'identité
   devise:
     failure:
-      no_provenance_selected: Veuillez sélectionner une provenance
-      not_in_list: Cette provenance n'est pas référencée dans la liste
-      not_needed: Champs non nécessaire
+      no_provenance_selected: No provenance selected
+      not_in_list: Not in list
+      not_needed: Not needed
   faker:
     address:
-      country_code:
-      - FR
-      - FR0
-      - FR1
-      - FR2
-      - FR3
-      - FR4
-      - FR5
-      - FR6
-      - FR7
-      - FR8
-      - FR9
+      country_code: '["FR", "FR0", "FR1", "FR2", "FR3", "FR4", "FR5", "FR6", "FR7", "FR8", "FR9"]'
   inactive_delete_reason: Account was deleted due to inactivity
   layouts:
     decidim:
       footer:
-        download_open_data: Données ouvertes
+        download_open_data: Open data
         made_with_open_source: Made with open source
         revoke_cookies: Revoke cookies
       header:

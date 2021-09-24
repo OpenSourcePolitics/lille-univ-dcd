@@ -30,6 +30,17 @@ en:
       cookies:
         jsessionid:
           description: Le cookie JSESSIONID permet de sauvegarder un identifiant de session. Celui-ci est nécessaire pour permettre à New Relic de monitorer la session.
+    destroy_account_mailer:
+      notify_of_deletion:
+        hello: Hello %{name}
+        notify_of_deletion_account_html: Notify of deletion account html
+        notify_of_deletion_explanation: Notify of deletion explanation
+        subject: Subject
+      warn_of_deletion:
+        hello: Hello %{name}
+        subject: Subject
+        warn_of_deletion_account_explanation: Warn of deletion account explanation
+        warn_of_deletion_account_html: Warn of deletion account html
     devise:
       registrations:
         new:
@@ -56,6 +67,7 @@ en:
   faker:
     address:
       country_code: '["FR", "FR0", "FR1", "FR2", "FR3", "FR4", "FR5", "FR6", "FR7", "FR8", "FR9"]'
+  inactive_delete_reason: Account was deleted due to inactivity
   layouts:
     decidim:
       footer:

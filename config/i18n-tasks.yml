@@ -107,6 +107,7 @@ ignore_unused:
   - decidim.components.cookies.jsessionid.description
   - decidim.verifications.authorizations.first_login.actions.osp_authorization_handler
   - decidim.verifications.authorizations.first_login.actions.osp_authorization_workflow
+  - inactive_delete_reason
 
 ## Exclude these keys from the `i18n-tasks eq-base' report:
 # ignore_eq_base:

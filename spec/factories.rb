@@ -27,6 +27,8 @@ FactoryBot.modify do
     accepted_tos_version { organization.tos_version }
     email_on_notification { true }
     registration_metadata { {} }
+    last_sign_in_at { nil }
+    warned_at { nil }
 
     trait :confirmed do
       confirmed_at { Time.current }

@@ -88,3 +88,4 @@ fr:
         awesome_config:
           js:
             drag_and_drop_image: Ajouter des images par glisser/déposer ou par copier/coller.
+  inactive_delete_reason: ""
